@@ -1,6 +1,9 @@
 # Pacman
 
 ## Server
+UDPでブロードキャストを使う/UDPでマルチキャストを使う(マルチキャストを送信する)
+http://www.geekpage.jp/programming/ruby-network/broadcast.php
+http://www.geekpage.jp/programming/ruby-network/multicast-1.php
 
 ## Client
 
