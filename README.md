@@ -4,6 +4,9 @@
 UDPでブロードキャストを使う/UDPでマルチキャストを使う(マルチキャストを送信する)
 - http://www.geekpage.jp/programming/ruby-network/broadcast.php
 - http://www.geekpage.jp/programming/ruby-network/multicast-1.php
+ 
+PC・スマホ両対応の動画配信サーバーメモ
+- http://qiita.com/naga3/items/9896d366eed755045866
 
 ## Client
 - HTML5でWebRTCを使ってみよう！「カメラを使ってみよう」編 : https://html5experts.jp/mganeko/5098/
