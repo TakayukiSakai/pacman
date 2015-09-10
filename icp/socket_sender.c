@@ -8,10 +8,13 @@
 #define UNIXDOMAIN_PATH "/tmp/server.sock"
 
 int main(int argc, char *argv[]){
+
+    // ファイルディスクリプタ
     int clifd, lsnfd;
     struct sockaddr_un cliaddr, srvaddr;
     struct pollfd fds[1] = {0,};
 
+    // socket作成
     lsnfd = socket(AF_UNIX, SOCK_STREAM, 0);
     if(lsnfd < 0){
         fprintf(stderr, "socket error errno[%d]\n", errno);

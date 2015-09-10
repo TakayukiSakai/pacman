@@ -37,3 +37,9 @@ TODO: TCP通信で送られてくる、文字列をHTTPとしてパースし、�
 - [ ] HTTPパース(難易度10)
 - [ ] パースしたものを振り分ける(難易度3)
 - [ ] 結果を正しく返す(難易度1)
+
+- [ ] 動かすポートを指定できたらいいかも
+- [ ] UDP サーバーとしても動かせたらいいかも
+
+## sockaddr, sockaddr_un, sockaddr_in について
+http://www-cms.phys.s.u-tokyo.ac.jp/~naoki/CIPINTRO/NETWORK/struct.html
