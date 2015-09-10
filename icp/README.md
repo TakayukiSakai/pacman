@@ -2,9 +2,9 @@
 参照: http://www.ncad.co.jp/~komata/c-kouza12.htm
 
 ## unix domain socket
-参照:
-http://qiita.com/nk_yohn3301/items/7aec184e290940052ed2
-http://www.geocities.co.jp/Athlete-Samos/7760/study/unix_socket1.html
+参照:  
+- http://qiita.com/nk_yohn3301/items/7aec184e290940052ed2
+- http://www.geocities.co.jp/Athlete-Samos/7760/study/unix_socket1.html
 
 ```
 ・domain
