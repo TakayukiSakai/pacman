@@ -22,6 +22,7 @@ int main(int argc, char *argv[]){
     memset(&srvaddr, 0, sizeof(struct sockaddr_un));
     srvaddr.sun_family = AF_UNIX;
     strcpy(srvaddr.sun_path, UNIXDOMAIN_PATH);
+
     if(bind(lsnfd, (struct sockaddr *)&srvaddr, sizeof(struct sockaddr_un)) < 0){
         fprintf(stderr, "bind error errno[%d]\n", errno);
         exit(-1);
@@ -37,7 +38,7 @@ int main(int argc, char *argv[]){
 
     poll(fds, 1, -1);
 
-    if(fds[0].revents & POLLIN){
+    if (fds[0].revents & POLLIN) {
         char recvbuf[2048] = "";
         memset(&cliaddr, 0, sizeof(struct sockaddr_un));
         socklen_t addrlen = sizeof(struct sockaddr_un);
@@ -48,7 +49,7 @@ int main(int argc, char *argv[]){
         int len = read(clifd, recvbuf, sizeof(recvbuf));
         recvbuf[len] = 0;
         fprintf(stdout, "%s\n", recvbuf);
-    }else{
+    } else {
         fprintf(stderr, "error errno[%d]\n", errno);
         exit(-1);
     }

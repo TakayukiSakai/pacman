@@ -24,3 +24,16 @@ IPPROTO_TCP  TCP/IP(AF_INET&SOCK_STREAMの場合。0も可。)
 IPPROTO_UDP  UDP/IP(AF_INET&SOCK_DGRAMの場合。0も可。)
 IPPROTO_RAW  ICMP(pingコマンドなど。AF_INET&SOCK_RAWでICMPソケットを作りたい場合)
 ```
+
+## HTTPサーバーを立ててみる
+目標: HTTPサーバーを立てる
+
+・第一段階
+特定の文字がきたら、`html/success.html`、それ以外は、`error.html` を返すようにする。
+
+・第二段階
+HTTP を実装する
+TODO: TCP通信で送られてくる、文字列をHTTPとしてパースし、解釈して、結果を返す。
+- [] HTTPパース(難易度10)
+- [] パースしたものを振り分ける(難易度3)
+- [] 結果を正しく返す(難易度1)
